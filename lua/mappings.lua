@@ -14,10 +14,13 @@ vim.g.mapleader = " "
 --        vim.lsp.buf.format { async = true }
 --      end, opts)
 
+map("n", "<leader>nh", ":nohl<CR>", opts)
+
 ---- plugin specific mappings
 
 -- nvim-tree
-map("n", "<leader>T", ":NvimTreeFocus<CR>", opts)
+map("n", "<leader>t", ":NvimTreeFocus<CR>", opts)
+map("n", "<leader>T", ":NvimTreeClose<CR>", opts)
 
 -- bufferline
 map("n", "b1", ":BufferLineGoToBuffer 1<CR>", opts)

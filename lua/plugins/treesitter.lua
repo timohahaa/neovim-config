@@ -1,8 +1,7 @@
-
 local configs = require("nvim-treesitter.configs")
 
 configs.setup({
-    ensure_installed = { 
+    ensure_installed = {
         "go",
         "gomod",
         "gowork",
@@ -19,9 +18,10 @@ configs.setup({
         "sql",
         "markdown",
         "markdown_inline",
+        "rust",
     },
     sync_install = false,
     auto_install = true,
     highlight = { enable = true },
-    indent = { enable = true },  
+    indent = { enable = true },
 })

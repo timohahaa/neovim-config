@@ -19,6 +19,8 @@ opt.tabstop = 4 --for everything except see lower
 opt.smartindent = true
 opt.shiftwidth = 4
 
+opt.confirm = true
+
 vim.cmd([[
 augroup tabGroup
 autocmd FileType lua, yaml setlocal shiftwidth=2 tabstop=2
@@ -35,8 +37,8 @@ augroup end
 -- autocomands
 local fmtGroup = vim.api.nvim_create_augroup('fmtGroup', { clear = true })
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-  group = fmtGroup,
-  callback = function()
-    vim.lsp.buf.format({ async = true })
-  end,
+    group = fmtGroup,
+    callback = function()
+        vim.lsp.buf.format({ async = true })
+    end,
 })
