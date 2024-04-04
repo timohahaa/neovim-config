@@ -21,24 +21,27 @@ opt.shiftwidth = 4
 
 opt.confirm = true
 
-vim.cmd([[
-augroup tabGroup
-autocmd FileType lua, yaml setlocal shiftwidth=2 tabstop=2
+vim.cmd([[augroup TabGroup
+autocmd FileType lua,yaml,vue,html,css :setlocal shiftwidth=2 tabstop=2 softtabstop=2
 augroup end
 ]])
---local tabGroup = vim.api.nvim_create_augroup('tabGroup', { clear = true })
---vim.api.nvim_create_autocmd({ "FileType yaml,lua" }, {
---	group = tabGroup,
---	command = "setlocal shiftwidth=2 tabstop=2"
+--local tabGroup2 = vim.api.nvim_create_augroup('tabGroup2', { clear = true })
+--vim.api.nvim_create_autocmd({ "FileType *.yaml,*.lua,*.html,*.css,*.vue" }, {
+--  group = tabGroup2,
+--  command = "setlocal shiftwidth=2 tabstop=2",
 --})
 
-
+--local tabGroup4 = vim.api.nvim_create_augroup('tabGroup4', { clear = true })
+--vim.api.nvim_create_autocmd({ "FileType js,ts,go,rs,c,cpp,py" }, {
+--  group = tabGroup4,
+--  command = "setlocal shiftwidth=4 tabstop=4",
+--})
 
 -- autocomands
 local fmtGroup = vim.api.nvim_create_augroup('fmtGroup', { clear = true })
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-    group = fmtGroup,
-    callback = function()
-        vim.lsp.buf.format({ async = true })
-    end,
+  group = fmtGroup,
+  callback = function()
+    vim.lsp.buf.format({ async = true })
+  end,
 })
