@@ -15,6 +15,7 @@ vim.g.mapleader = " "
 --      end, opts)
 
 map("n", "<leader>nh", ":nohl<CR>", opts)
+map("n", "<leader>lr", ":LspRestart<CR>", opts)
 
 ---- plugin specific mappings
 
