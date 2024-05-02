@@ -3,13 +3,13 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = " "
 
--- autocomands
+--========== AUTOCOMMANDS ==========
 -- vim.api.nvim_create_autocmd({"BufWritePre"}, {
 --     pattern = {"*.go"},
 --     command = ,
 -- })
 
--- general
+--========== GENERAL ==========
 --vim.keymap.set('n', '<space>fr', function()
 --        vim.lsp.buf.format { async = true }
 --      end, opts)
@@ -17,7 +17,8 @@ vim.g.mapleader = " "
 map("n", "<leader>nh", ":nohl<CR>", opts)
 map("n", "<leader>lr", ":LspRestart<CR>", opts)
 
----- plugin specific mappings
+
+--========== PLUGIN SPECIFIC MAPPINGS ==========
 
 -- nvim-tree
 map("n", "<leader>t", ":NvimTreeFocus<CR>", opts)
@@ -40,3 +41,5 @@ map("n", "<A-x>", "::bp<bar>sp<bar>bn<bar>bd<CR>", opts)
 -- telescope
 local builtin = require("telescope.builtin")
 map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+map("n", "<leader>fs", ":Telescope grep_string<CR>", opts)
+map("n", "<leader>lg", ":Telescope live_grep<CR>", opts)
