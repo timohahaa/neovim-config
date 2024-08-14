@@ -7,7 +7,7 @@ configs.setup({
     "gowork",
     "python",
     "dockerfile",
-    "proto",     --for gRPC
+    "proto",
     "c",
     "bash",
     "json",
@@ -25,3 +25,4 @@ configs.setup({
   highlight = { enable = true },
   indent = { enable = true },
 })
+

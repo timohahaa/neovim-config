@@ -16,7 +16,7 @@ opt.mousemoveevent = true
 
 opt.encoding = 'utf-8'
 
-opt.swapfile = true
+opt.swapfile = false
 
 -- print the line number in front of each line
 opt.number = true

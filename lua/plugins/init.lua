@@ -12,8 +12,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    -------------------------------
-  -- LSP, autocompletion, etc. --
+  -------------------------------
+  ------------- LSP -------------
   -------------------------------
   {
     "williamboman/mason.nvim",
@@ -30,6 +30,10 @@ require("lazy").setup({
       require("plugins/lspconf")
     end,
   },
+
+  -------------------------------
+  ------- autocompletion --------
+  -------------------------------
   {
     "hrsh7th/nvim-cmp",
     lazy = false,
@@ -37,10 +41,18 @@ require("lazy").setup({
       require("plugins/autocomp")
     end,
   },
-  "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-buffer",
-  "hrsh7th/cmp-path",
-  "saadparwaiz1/cmp_luasnip",
+  {
+    "hrsh7th/cmp-nvim-lsp",
+  },
+  {
+    "hrsh7th/cmp-buffer",
+  },
+  {
+    "hrsh7th/cmp-path",
+  },
+  {
+    "saadparwaiz1/cmp_luasnip",
+  },
   {
     "L3MON4D3/LuaSnip",
     lazy = false,
@@ -55,6 +67,7 @@ require("lazy").setup({
     event = "InsertEnter",
     opts = {} -- this is equalent to setup({}) function
   },
+
   --------------------------------
   -- treesitter and colorscheme --
   --------------------------------
@@ -81,31 +94,7 @@ require("lazy").setup({
       require("plugins/colorscheme")
     end
   },
-  --    {
-  --        'rose-pine/neovim',
-  --        name = 'rose-pine',
-  --        lazy = false,
-  --        priority = 1000,
-  --        config = function()
-  --            require("rose-pine").setup({
-  --                disable_background = true,
-  --                disable_float_background = true,
-  --                disable_italics = true,
-  --            })
-  --        end
-  --    },
-  --    {
-  --        "fynnfluegge/monet.nvim",
-  --        config = function()
-  --            require("monet").setup {
-  --                transparent_background = true,
-  --                semantic_tokens = true,
-  --                highlight_overrides = {},
-  --                color_overrides = {},
-  --                styles = {},
-  --            }
-  --        end
-  --    },
+
   -------------------------------------------------------------
   -- ui stuff: file explorer, lualine, tabs, highlights, etc --
   -------------------------------------------------------------
@@ -130,9 +119,10 @@ require("lazy").setup({
     lazy = false,
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
-      require("plugins/tabline")
+      require("plugins/bufferline")
     end,
   },
+
   -------------------------
   -- other usefull stuff --
   -------------------------
@@ -153,6 +143,16 @@ require("lazy").setup({
     end
   },
   {
+    "lewis6991/gitsigns.nvim",
+    lazy = false,
+    config = function()
+      require("gitsigns").setup({})
+    end,
+  },
+  {
+    'wfxr/protobuf.vim',
+  },
+  {
     'nvim-telescope/telescope.nvim',
     lazy = false,
     branch = '0.1.x',
@@ -160,23 +160,9 @@ require("lazy").setup({
       'nvim-lua/plenary.nvim',
       "BurntSushi/ripgrep",
       'nvim-telescope/telescope-fzf-native.nvim',
-    }
-  },
-  {
-    "lewis6991/gitsigns.nvim",
-    lazy = false,
+    },
     config = function()
-      require("gitsigns").setup()
-    end,
+      require('plugins/telescope')
+    end
   },
-  --    {
-  --        "simrat39/rust-tools.nvim",
-  --        lazy = false,
-  --    },
-  {
-    "prettier/vim-prettier",
-    run = 'yarn install --frozen-lockfile --production',
-    ft = { 'javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html' },
-  },
-  'wfxr/protobuf.vim',
 })
