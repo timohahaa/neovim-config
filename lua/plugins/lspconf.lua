@@ -81,8 +81,8 @@ lspconfig.docker_compose_language_service.setup({
   capabilities = capabilities,
 })
 lspconfig.rust_analyzer.setup({
-  --    filetypes = { "rs" },
-  --    root_dir = util.root_pattern("Cargo.toml"),
+  -- filetypes = { "rs" },
+  -- root_dir = util.root_pattern("Cargo.toml"),
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
