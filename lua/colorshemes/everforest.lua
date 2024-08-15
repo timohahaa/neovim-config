@@ -6,4 +6,4 @@ require("everforest").setup({
   diagnostic_line_highlight = true,
 })
 --vim.cmd([[:set background=light]])
-require("everforest").load()
+--require("everforest").load()

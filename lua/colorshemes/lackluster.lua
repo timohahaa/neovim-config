@@ -7,4 +7,4 @@ require('lackluster').setup({
     bufferline = true,
   }
 })
-vim.cmd.colorscheme("lackluster-mint")
+-- vim.cmd.colorscheme("lackluster-mint")

@@ -7,4 +7,4 @@ require("monet").setup {
     strings = {},
   },
 }
-vim.cmd([[colorscheme monet]])
+--vim.cmd([[colorscheme monet]])
