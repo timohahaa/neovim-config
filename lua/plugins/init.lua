@@ -80,12 +80,6 @@ require("lazy").setup({
     end,
   },
   {
-    --"neanias/everforest-nvim",
-    --"rebelot/kanagawa.nvim",
-    --"kvrohit/mellow.nvim",
-    --"sainnhe/sonokai",
-    --'maxmx03/dracula.nvim',
-    --"fynnfluegge/monet.nvim",
     "catppuccin/nvim",
     name = "catppuccin",
     lazy = false,
@@ -94,6 +88,14 @@ require("lazy").setup({
       require("plugins/colorscheme")
     end
   },
+  'jaredgorski/fogbell.vim',
+  'antonio-hickey/minty-melon',
+  'slugbyte/lackluster.nvim',
+  "neanias/everforest-nvim",
+  "rebelot/kanagawa.nvim",
+  "fynnfluegge/monet.nvim",
+  'ellisonleao/gruvbox.nvim',
+  'yorickpeterse/vim-paper',
 
   -------------------------------------------------------------
   -- ui stuff: file explorer, lualine, tabs, highlights, etc --
@@ -126,15 +128,13 @@ require("lazy").setup({
   -------------------------
   -- other usefull stuff --
   -------------------------
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    lazy = false,
-    config = function()
-      require("ibl").setup({
-        scope = { enabled = false },
-      })
-    end,
-  },
+  --{
+  --  "lukas-reineke/indent-blankline.nvim",
+  --  lazy = false,
+  --  config = function()
+  --    require('plugins/blankline')
+  --  end,
+  --},
   {
     'brenoprata10/nvim-highlight-colors',
     lazy = false,
