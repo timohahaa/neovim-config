@@ -7,4 +7,5 @@ require('colorshemes/lackluster')
 require('colorshemes/kanagawa')
 require('colorshemes/gruvbox')
 
-vim.cmd.colorscheme "catppuccin"
+--vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "monet"

@@ -128,13 +128,13 @@ require("lazy").setup({
   -------------------------
   -- other usefull stuff --
   -------------------------
-  --{
-  --  "lukas-reineke/indent-blankline.nvim",
-  --  lazy = false,
-  --  config = function()
-  --    require('plugins/blankline')
-  --  end,
-  --},
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    lazy = false,
+    config = function()
+      require('plugins/blankline')
+    end,
+  },
   {
     'brenoprata10/nvim-highlight-colors',
     lazy = false,
