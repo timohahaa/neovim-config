@@ -6,6 +6,11 @@ require('colorshemes/monet')
 require('colorshemes/lackluster')
 require('colorshemes/kanagawa')
 require('colorshemes/gruvbox')
+require('colorshemes/tokyonight')
+require('colorshemes/everforest')
+require('colorshemes/obscure')
 
 --vim.cmd.colorscheme "catppuccin"
+--vim.cmd.colorscheme "tokyonight" -- doesnt work with transarent
 vim.cmd.colorscheme "monet"
+--vim.cmd.colorscheme "obscure"

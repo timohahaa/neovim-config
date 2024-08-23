@@ -96,7 +96,8 @@ require("lazy").setup({
   "fynnfluegge/monet.nvim",
   'ellisonleao/gruvbox.nvim',
   'yorickpeterse/vim-paper',
-
+  "folke/tokyonight.nvim",
+  "killitar/obscure.nvim",
   -------------------------------------------------------------
   -- ui stuff: file explorer, lualine, tabs, highlights, etc --
   -------------------------------------------------------------
