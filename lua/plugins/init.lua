@@ -98,6 +98,10 @@ require("lazy").setup({
   'yorickpeterse/vim-paper',
   "folke/tokyonight.nvim",
   "killitar/obscure.nvim",
+  "sainnhe/sonokai",
+  "loctvl842/monokai-pro.nvim",
+  "vague2k/vague.nvim",
+  "scottmckendry/cyberdream.nvim",
   -------------------------------------------------------------
   -- ui stuff: file explorer, lualine, tabs, highlights, etc --
   -------------------------------------------------------------

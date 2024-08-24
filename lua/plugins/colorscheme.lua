@@ -9,8 +9,13 @@ require('colorshemes/gruvbox')
 require('colorshemes/tokyonight')
 require('colorshemes/everforest')
 require('colorshemes/obscure')
+require('colorshemes/sonokai')
+require('colorshemes/monokai-pro')
+require('colorshemes/vague')
+require('colorshemes/cyberdream')
 
 --vim.cmd.colorscheme "catppuccin"
---vim.cmd.colorscheme "tokyonight" -- doesnt work with transarent
+--vim.cmd.colorscheme "tokyonight"
 vim.cmd.colorscheme "monet"
 --vim.cmd.colorscheme "obscure"
+--vim.cmd([[colorscheme sonokai]])

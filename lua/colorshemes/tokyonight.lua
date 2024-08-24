@@ -11,12 +11,12 @@ require('tokyonight').setup({
     functions = {},
     variables = {},
     -- Background styles. Can be "dark", "transparent" or "normal"
-    sidebars = "dark",  -- style for sidebars, see below
-    floats = "dark",    -- style for floating windows
+    sidebars = "transparent", -- style for sidebars, see below
+    floats = "transparent",   -- style for floating windows
   },
-  day_brightness = 0.3, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
-  dim_inactive = false, -- dims inactive windows
-  lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
+  day_brightness = 0.3,       -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+  dim_inactive = false,       -- dims inactive windows
+  lualine_bold = false,       -- When `true`, section headers in the lualine theme will be bold
 
   --- You can override specific color groups to use other groups or a hex color
   --- function will be called with a ColorScheme table
@@ -27,7 +27,20 @@ require('tokyonight').setup({
   --- function will be called with a Highlights and ColorScheme table
   ---@param highlights tokyonight.Highlights
   ---@param colors ColorScheme
-  on_highlights = function(highlights, colors) end,
+  on_highlights = function(highlights, colors)
+    highlights.Normal = {
+      bg = colors.none,
+    }
+    highlights.NormalNC = {
+      bg = colors.none,
+    }
+    highlights.NormalFloat = {
+      bg = colors.none,
+    }
+    highlights.NormalSB = {
+      bg = colors.none,
+    }
+  end,
 
   cache = true, -- When set to true, the theme will be cached for better performance
 
