@@ -88,20 +88,21 @@ require("lazy").setup({
       require("plugins/colorscheme")
     end
   },
-  'jaredgorski/fogbell.vim',
-  'antonio-hickey/minty-melon',
   'slugbyte/lackluster.nvim',
   "neanias/everforest-nvim",
   "rebelot/kanagawa.nvim",
   "fynnfluegge/monet.nvim",
   'ellisonleao/gruvbox.nvim',
-  'yorickpeterse/vim-paper',
   "folke/tokyonight.nvim",
   "killitar/obscure.nvim",
   "sainnhe/sonokai",
-  "loctvl842/monokai-pro.nvim",
   "vague2k/vague.nvim",
   "scottmckendry/cyberdream.nvim",
+  { "rose-pine/neovim", name = "rose-pine" },
+  "EdenEast/nightfox.nvim",
+  'aliqyan-21/darkvoid.nvim',
+  "0xstepit/flow.nvim",
+  'projekt0n/github-nvim-theme',
   -------------------------------------------------------------
   -- ui stuff: file explorer, lualine, tabs, highlights, etc --
   -------------------------------------------------------------

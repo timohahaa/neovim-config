@@ -10,12 +10,16 @@ require('colorshemes/tokyonight')
 require('colorshemes/everforest')
 require('colorshemes/obscure')
 require('colorshemes/sonokai')
-require('colorshemes/monokai-pro')
 require('colorshemes/vague')
 require('colorshemes/cyberdream')
+require('colorshemes/rose-pine')
+require('colorshemes/nightfox')
+require('colorshemes/darkvoid')
+require('colorshemes/flow')
+require('colorshemes/github-theme')
 
 --vim.cmd.colorscheme "catppuccin"
---vim.cmd.colorscheme "tokyonight"
-vim.cmd.colorscheme "monet"
---vim.cmd.colorscheme "obscure"
---vim.cmd([[colorscheme sonokai]])
+--vim.cmd.colorscheme "monet"
+--vim.cmd.colorscheme "flow"
+--vim.cmd.colorscheme "github_dark_default"
+vim.cmd.colorscheme "rose-pine"
