@@ -67,6 +67,13 @@ require("lazy").setup({
     event = "InsertEnter",
     opts = {} -- this is equalent to setup({}) function
   },
+  {
+    'windwp/nvim-ts-autotag',
+    config = function()
+      require("nvim-ts-autotag").setup({})
+    end,
+    lazy = false,
+  },
 
   --------------------------------
   -- treesitter and colorscheme --
