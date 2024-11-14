@@ -110,6 +110,22 @@ require("lazy").setup({
   'aliqyan-21/darkvoid.nvim',
   "0xstepit/flow.nvim",
   'projekt0n/github-nvim-theme',
+  {
+    url = "https://codeberg.org/jthvai/lavender.nvim",
+    branch = "stable", -- versioned tags + docs updates from main
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.lavender = {
+        transparent = {
+          background = true, -- do not render the main background
+          float      = true, -- do not render the background in floating windows
+          popup      = true, -- do not render the background in popup menus
+          sidebar    = true, -- do not render the background in sidebars
+        },
+      }
+    end
+  },
   -------------------------------------------------------------
   -- ui stuff: file explorer, lualine, tabs, highlights, etc --
   -------------------------------------------------------------
