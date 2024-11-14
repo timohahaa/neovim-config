@@ -1,5 +1,5 @@
 require('tokyonight').setup({
-  style = "moon",         -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
+  style = "night",        -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
   light_style = "day",    -- The theme is used when the background is set to light
   transparent = true,     -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
@@ -18,31 +18,7 @@ require('tokyonight').setup({
   dim_inactive = false,       -- dims inactive windows
   lualine_bold = false,       -- When `true`, section headers in the lualine theme will be bold
 
-  --- You can override specific color groups to use other groups or a hex color
-  --- function will be called with a ColorScheme table
-  ---@param colors ColorScheme
-  on_colors = function(colors) end,
-
-  --- You can override specific highlights to use other groups or a hex color
-  --- function will be called with a Highlights and ColorScheme table
-  ---@param highlights tokyonight.Highlights
-  ---@param colors ColorScheme
-  on_highlights = function(highlights, colors)
-    highlights.Normal = {
-      bg = colors.none,
-    }
-    highlights.NormalNC = {
-      bg = colors.none,
-    }
-    highlights.NormalFloat = {
-      bg = colors.none,
-    }
-    highlights.NormalSB = {
-      bg = colors.none,
-    }
-  end,
-
-  cache = true, -- When set to true, the theme will be cached for better performance
+  cache = true,               -- When set to true, the theme will be cached for better performance
 
   ---@type table<string, boolean|{enabled:boolean}>
   plugins = {
@@ -55,6 +31,7 @@ require('tokyonight').setup({
     -- add any plugins here that you want to enable
     -- for all possible plugins, see:
     --   * https://github.com/folke/tokyonight.nvim/tree/main/lua/tokyonight/groups
-    -- telescope = true,
+    telescope = true,
+    treesitter = true,
   },
 })

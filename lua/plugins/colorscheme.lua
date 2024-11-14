@@ -23,4 +23,4 @@ require('colorshemes/github-theme')
 --vim.cmd.colorscheme "flow"
 --vim.cmd.colorscheme "github_dark_default"
 --vim.cmd.colorscheme "rose-pine"
-vim.cmd.colorscheme "tokyonight-night"
+vim.cmd.colorscheme "tokyonight"
