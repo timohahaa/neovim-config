@@ -17,10 +17,12 @@ require('colorshemes/nightfox')
 require('colorshemes/darkvoid')
 require('colorshemes/flow')
 require('colorshemes/github-theme')
+require('colorshemes/material')
 
 --vim.cmd.colorscheme "catppuccin"
 --vim.cmd.colorscheme "monet"
 --vim.cmd.colorscheme "flow"
 --vim.cmd.colorscheme "github_dark_default"
 --vim.cmd.colorscheme "rose-pine"
-vim.cmd.colorscheme "tokyonight"
+--vim.cmd.colorscheme "tokyonight"
+vim.cmd.colorscheme "material-deep-ocean"

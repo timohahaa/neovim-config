@@ -110,6 +110,10 @@ require("lazy").setup({
   'aliqyan-21/darkvoid.nvim',
   "0xstepit/flow.nvim",
   'projekt0n/github-nvim-theme',
+  "Zeioth/neon.nvim",
+  'bettervim/yugen.nvim',
+  "love-pengy/lillilac.nvim",
+  'marko-cerovac/material.nvim',
   {
     url = "https://codeberg.org/jthvai/lavender.nvim",
     branch = "stable", -- versioned tags + docs updates from main
@@ -125,29 +129,6 @@ require("lazy").setup({
         },
       }
     end
-  },
-  {
-    'RRethy/base16-nvim',
-    --config = function()
-    --  require('base16-colorscheme').setup({
-    --    base00 = 'NONE',
-    --    base01 = '#2c313c',
-    --    base02 = '#3e4451',
-    --    base03 = '#6c7891',
-    --    base04 = '#565c64',
-    --    base05 = '#00d3dd',
-    --    base06 = '#FFFFFF',
-    --    base07 = '#FF0000',
-    --    base08 = '#fdfdfd',
-    --    base09 = '#c9184a',
-    --    base0A = '#6ae4b9',
-    --    base0B = '#669bbc',
-    --    base0C = '#ff5f5f',
-    --    base0D = '#feacd0',
-    --    base0E = '#9d4edd',
-    --    base0F = '#dfdfdf',
-    --  })
-    --end
   },
   -------------------------------------------------------------
   -- ui stuff: file explorer, lualine, tabs, highlights, etc --
